@@ -1,0 +1,1 @@
+export {default as BackgroundScene} from "./components/BackgroundScene"
