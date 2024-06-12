@@ -2,14 +2,15 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { Outlet } from "react-router-dom";
 
 const Root = () => {
-  
   return (
-    <div id="react-root" className=" bg-background min-h-lvh flex flex-col items-center">
-      <header>
+    <div
+      id="react-root"
+      className="flex min-h-lvh flex-col items-center bg-background"
+    >
+      <header className="flex w-full justify-start items-center">
         <ModeToggle />
-        <p>head</p>
       </header>
-      <main className=" flex-1 items-center content-center">
+      <main className="flex-1 content-center items-center">
         <Outlet context={{}} />
       </main>
       <footer>
