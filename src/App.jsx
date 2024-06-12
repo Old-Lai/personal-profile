@@ -1,17 +1,14 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { 
-  Root,
-  NotFound,
-  Home
-} from './pages'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ThemeProvider } from "./components/theme-provider";
+import { Root, NotFound, Home } from "./pages";
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Root />,
     errorElement: <NotFound />,
     children: [
       {
-        path:"/",
+        path: "/",
         element: <Home />,
       },
       // {
@@ -22,14 +19,16 @@ const router = createBrowserRouter([
       //   path:"/admin",
       //   element: <AdminPage />,
       // }
-    ]
-  }
-])
+    ],
+  },
+]);
 
 function App() {
   return (
-      <RouterProvider router={router}/>
-  )
+    <ThemeProvider defaultTheme="system" storageKey="ui-theme">
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
