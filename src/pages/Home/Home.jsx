@@ -44,15 +44,15 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        {/* <div className="flex flex-col">
+        <div className="flex flex-col">
           <ChevronDown className="animate-moveDown-fade" style={{'--moveDown-fade-delay': '-2s'}}/>
           <ChevronDown className="animate-moveDown-fade" style={{'--moveDown-fade-delay': '-1s'}}/>
           <ChevronDown className="animate-moveDown-fade"/>
-        </div> */}
+        </div>
       </section>
-      {/* <section className="flex h-[600px] w-full flex-col items-center justify-center bg-slate-500">
-        <h2 className="scroll-m-20 text-3xl">test</h2>
-      </section> */}
+      <section className="flex h-[600px] w-full flex-col items-center justify-center bg-slate-500">
+        <h2 className="scroll-m-20 text-3xl">Raspberry pi</h2>
+      </section>
     </div>
   );
 }
