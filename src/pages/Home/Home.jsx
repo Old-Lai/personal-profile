@@ -50,8 +50,20 @@ export default function Home() {
           <ChevronDown className="animate-moveDown-fade"/>
         </div>
       </section>
-      <section className="flex h-[600px] w-full flex-col items-center justify-center bg-slate-500">
-        <h2 className="scroll-m-20 text-3xl">Raspberry pi</h2>
+      <section className="flex h-[600px] w-full flex-col items-center justify-center bg-secondary">
+        <h2 className="scroll-m-20 text-3xl">About Me</h2>
+      </section>
+      <section className="flex h-[600px] w-full flex-col items-center justify-center bg-bacground">
+        <h2 className="scroll-m-20 text-3xl">Portfolio | Projects</h2>
+      </section>
+      <section className="flex h-[600px] w-full flex-col items-center justify-center bg-secondary">
+        <h2 className="scroll-m-20 text-3xl">Interactive Show Case</h2>
+      </section>
+      <section className="flex h-[600px] w-full flex-col items-center justify-center bg-background">
+        <h2 className="scroll-m-20 text-3xl">Resume downloadable</h2>
+      </section>
+      <section className="flex h-[600px] w-full flex-col items-center justify-center bg-secondary">
+        <h2 className="scroll-m-20 text-3xl">Contact Form</h2>
       </section>
     </div>
   );
